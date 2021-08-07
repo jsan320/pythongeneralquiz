@@ -1,10 +1,10 @@
-print("welcome to my general knowledge quiz g")
+print("welcome to my general knowledge quiz ")
 
 playing = input("do you want to play? ")
 
 if playing.lower() != "yes":   # .lower() makes all the input lowercase, also .upper() makes all the input uppercase
         quit()
-print("okay lets play m8")
+print("okay lets play!")
 score = 0
 answer = input("how long is a decade? ")
 
