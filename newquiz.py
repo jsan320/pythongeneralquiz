@@ -1,54 +1,60 @@
-print("welcome to my general knowledge quiz ")
+print ("welcome to my program")
 
-playing = input("do you want to play? ")
+playing = input("wanna play a quiz? ")
 
-if playing.lower() != "yes":   # .lower() makes all the input lowercase, also .upper() makes all the input uppercase
-        quit()
-print("okay lets play!")
-score = 0
-answer = input("how long is a decade? ")
+if playing.lower() != "yes":            # if playing doesnt equal "yes" the program will close itself after printing a message
 
-if answer.lower() == "10 years":   
- print("Correct!")
- score += 1
-else:
- print("Incorrect!")
-        
-answer = input("which country is the most populated? ")
-
-if answer.lower() == "china":   
- print("Correct!")
- score += 1
-else:
- print("Incorrect!")
+    print ("Ok, see ya later mate")
+    quit()
+    
+print ("lets play then")
 
 
-answer = input("which company made the iphone? ")
 
-if answer.lower() == "apple":
- print("Correct!")
- score += 1
-else:
- print("Incorrect!")
- 
+print ("which one is the capital city of the UK? ")
 
-answer = input("Which language are we speaking? ")
+print ("a) Berlin")
+print ("b) London")
+print ("c) Gujrat")
+answer = input ()             # this line is the moment in which the user is expected to write some input for the software to work with
 
-if answer.lower() == "english":
- print("Correct!")
- score += 1
-else:
- print("Incorrect!")
+if answer.lower() == "b":
+    print ("You're right, obviously")
 
-        
-answer = input("which is the biggest country in the world? ")
+else:                                  # if the answer doesnt equal "b" the program will print a small text and close itself.
+    print ("Incorrect")  
 
-if answer.lower() == "russia":
- print("Correct!")
- score += 1
-else:
- print("Incorrect!")
+    quit()
 
 
- print("You got " + str(score) + " questions correct!")
- print("You got " + str((score/5) * 100) + " % of the questions right!")               
+print ("which one is the capital city of France? ")
+
+print ("a) Birmingham")
+print ("b) London")
+print ("c) Paris")
+answer = input ()
+
+if answer.lower() == "c":
+    print ("You're right, obviously")
+
+else: 
+    print ("You're wrong, but sometimes is okay")
+
+    quit ()
+
+# this quiz has been made in Manchester
+
+print ("which one is the capital city of Belgium? ")
+
+print ("a) Brussels")
+print ("b) New York")
+print ("c) Moscow")
+answer = input ()
+
+if answer.lower() == "a":                     # the .lower() filters the users input and makes it all lowercase even if the user typed it in uppercase of both but the answer still needs to be right
+    print ("You're right, well done!")
+
+else: 
+    print ("You're wrong, get out")           # I like cakes
+
+    quit()
